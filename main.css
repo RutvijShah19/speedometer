@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.meter {
+  position: relative;
+  background: #fff url(meter.png) no-repeat center;
+  background-size: 100%;
+  height: 20em;
+  width: 20em;
+}
+
+.dial-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.dial {
+  position: absolute;
+  background: url(dial.png) no-repeat;
+  height: 117px;
+  width: 42px;
+  background-size: 79%;
+  animation-name: dial-move;
+  right: 44%;
+  top: 23%;
+  transform-origin: 44% 72%;
+  animation-name: dial-move;
+  -ms-transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+@keyframes dial-move {
+  transform-origin: 44% 72%;
+}
